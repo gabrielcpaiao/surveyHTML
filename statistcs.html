@@ -69,56 +69,56 @@
     </div>
 
 
-    {{--
+    
     <div class="border border-dark rounded mt-1 mb-1 p-2">
       <canvas id="myChart" width="1300" height="350"></canvas>
     </div>
-    --}}
+    
 
-    {{--
+    
     <div class="border border-dark rounded mb-1 p-1">
       <canvas id="bar" width="1800" height="350"></canvas>
-      <script src="{{ asset('js/statistics.js') }}"></script>
+      <script src="statistics.js'"></script>
     </div>
-    --}}
+    
 
 
     <div class="border border-dark rounded mb-1 p-1">
       <div class="col ">
         <div class="card shadow mb-1">
           <div class="card-header py-3 border border-dark bg-primary bg-gradient text-white">
-              <h6 class="m-0 fw-bold text-center">Total de votos = {{ $total }}</h6>
+              <h6 class="m-0 fw-bold text-center">Total de votos = 100</h6>
           </div>
           <div class="card-body">
-            <h4 class="small fw-bold">Péssimo = {{$pessimo}}<span
+            <h4 class="small fw-bold">Péssimo = 15<span
                 class="float-right"></span></h4>
             <div class="progress mb-4">
-              <div class="progress-bar bg-danger fw-bold" role="progressbar" style="width: {{ round(($pessimo / $total) * 100, 2) }}%"
-                  aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{ round(($pessimo / $total) * 100, 2) }}%</div>
+              <div class="progress-bar bg-danger fw-bold" role="progressbar" style="width: 20%"
+                  aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">13%</div>
             </div>
-            <h4 class="small fw-bold">Ruim = {{$ruim}}<span
+            <h4 class="small fw-bold">Ruim = 40<span
                 class="float-right"></span></h4>
             <div class="progress mb-4">
-              <div class="progress-bar fw-bold" role="progressbar" style="width: {{ round(($ruim / $total) * 100, 2) }}%; background-color: #FD7E14;"
-                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">{{ round(($ruim / $total) * 100, 2) }}%</div>
+              <div class="progress-bar fw-bold" role="progressbar" style="width: 12%; background-color: #FD7E14;"
+                  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">65%</div>
             </div>
-            <h4 class="small fw-bold">Médio = {{$medio}}<span
+            <h4 class="small fw-bold">Médio = 55<span
                 class="float-right"></span></h4>
             <div class="progress mb-4">
-              <div class="progress-bar fw-bold bg-warning" role="progressbar" style="width: {{ round(($medio / $total) * 100, 2) }}%"
-                  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">{{ round(($medio / $total) * 100, 2) }}%</div>
+              <div class="progress-bar fw-bold bg-warning" role="progressbar" style="width: 22%"
+                  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">41%</div>
             </div>
-            <h4 class="small fw-bold">Bom = {{$bom}}<span
+            <h4 class="small fw-bold">Bom = 32<span
                 class="float-right"></span></h4>
             <div class="progress mb-4">
-              <div class="progress-bar fw-bold" role="progressbar" style="width: {{ round(($bom / $total) * 100, 2) }}%; ; background-color: #02CC69"
-                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">{{ round(($bom / $total) * 100, 2) }}%</div>
+              <div class="progress-bar fw-bold" role="progressbar" style="width: 23%; ; background-color: #02CC69"
+                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">12%</div>
             </div>
-            <h4 class="small fw-bold">Ótimo = {{$otimo}}<span
+            <h4 class="small fw-bold">Ótimo = 81<span
                 class="float-right"></span></h4>
             <div class="progress">
-              <div class="progress-bar fw-bold bg-success" role="progressbar" style="width: {{ round(($otimo / $total) * 100, 2) }}%"
-                  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">{{ round(($otimo / $total) * 100, 2) }}%</div>
+              <div class="progress-bar fw-bold bg-success" role="progressbar" style="width: 46%"
+                  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">5%</div>
             </div>
           </div>
         </div>

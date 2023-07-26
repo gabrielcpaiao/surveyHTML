@@ -42,61 +42,56 @@
     
 
     <div class="d-flex flex-grow-1 p-2 border rounded">
-      <form id="pessimo-form" method="POST" action="/submit"
+      <form id="pessimo-form" method="POST" action="/"
         class="d-flex border border-dark flex-fill justify-content-center align-items-center p-2 rounded">
-        @csrf
-        <div class="d-flex flex-column text-center" onclick="document.forms['pessimo-form'].submit();">
+        <div class="d-flex flex-column text-center" onclick="">
           <div class="pb-2"><button type="button" class="btn btn-primary">Péssimo</button></div>
           <div><img src="img/face5.png" class="img-fluid" /></div>
         </div>
         <input type="hidden" name="state" value="pessimo">
-        <input type="hidden" name="guiche" value="{{ $guiche }}">
+        <input type="hidden" name="guiche" value="">
       </form>
 
-      <form id="ruim-form" method="POST" action="/submit"
+      <form id="ruim-form" method="POST" action="/"
         class="d-flex border border-dark flex-fill justify-content-center align-items-center p-2 rounded">
-        @csrf
-        <div class="d-flex flex-column text-center" onclick="document.forms['ruim-form'].submit();">
+        <div class="d-flex flex-column text-center" onclick="">
           <div class="pb-2"><button type="button" class="btn btn-primary">Ruim</button></div>
           <div><img src="img/face4.png" class="img-fluid" /></div>
         </div>
         <input type="hidden" name="state" value="ruim">
-        <input type="hidden" name="guiche" value="{{ $guiche }}">
+        <input type="hidden" name="guiche" value="">
       </form>
 
-      <form id="medio-form" method="POST" action="/submit"
+      <form id="medio-form" method="POST" action="/"
         class="d-flex border border-dark flex-fill justify-content-center align-items-center p-2 rounded">
-        @csrf
-        <div class="d-flex flex-column text-center" onclick="document.forms['medio-form'].submit();">
+        <div class="d-flex flex-column text-center" onclick="">
           <div class="pb-2"><button type="button" class="btn btn-primary">Médio</button></div>
           <div><img src="img/face3.png" class="img-fluid" /></div>
         </div>
         <input type="hidden" name="state" value="medio">
-        <input type="hidden" name="guiche" value="{{ $guiche }}">
+        <input type="hidden" name="guiche" value="">
       </form>
 
       <form id="bom-form" method="POST" action="/submit"
         class="d-flex border border-dark flex-fill justify-content-center align-items-center p-2 rounded">
-        @csrf
-        <div class="d-flex flex-column text-center" onclick="document.forms['bom-form'].submit();">
+        <div class="d-flex flex-column text-center" onclick="">
           <div class="pb-2"><button type="button" class="btn btn-primary">Bom</button></div>
           <div><img src="img/face2.png" class="img-fluid" /></div>
         </div>
         <input type="hidden" name="state" value="bom">
-        <input type="hidden" name="guiche" value="{{ $guiche }}">
+        <input type="hidden" name="guiche" value="">
       </form>
 
       <form id="otimo-form" method="POST" action="/submit"
         class="d-flex border border-dark flex-fill justify-content-center align-items-center p-2 rounded">
-        @csrf
-        <div class="d-flex flex-column text-center" onclick="document.forms['otimo-form'].submit();">
+        <div class="d-flex flex-column text-center" onclick="">
           <div class="pb-2">
             <button type="button" class="btn btn-primary">Ótimo</button>
           </div>
           <div><img src="img/face1.png" class="img-fluid" /></div>
         </div>
         <input type="hidden" name="state" value="otimo">
-        <input type="hidden" name="guiche" value="{{ $guiche }}">
+        <input type="hidden" name="guiche" value="">
       </form>
 
     </div>
